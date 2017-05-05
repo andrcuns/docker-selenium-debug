@@ -1,0 +1,19 @@
+---
+sudo: required
+
+services: docker
+
+language: bash
+
+branches:
+  only: master
+
+env:
+  - BROWSER=chrome
+  - BROWSER=firefox
+
+before_script:
+  - docker -v
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+
+script: bash release.sh
