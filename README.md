@@ -3,3 +3,5 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/andrcuns/node-firefox-debug.svg?style=flat-square)](https://hub.docker.com/r/andrcuns/firefox-chrome-debug/)
 # docker-selenium-debug
 Official SeleniumHQ debug nodes images without password for VNC server
+
+To build new image, version in release.sh needs to be updated.
