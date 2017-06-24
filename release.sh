@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="3.4.0-chromium"
+VERSION="3.4.0-dysprosium"
 VERSION_NUMBER=$(echo $VERSION | awk -F- '{ print $1 }')
 IMAGE="node-$BROWSER-debug"
 image_major="andrcuns/$IMAGE:$VERSION_NUMBER"
