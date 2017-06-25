@@ -1,3 +1,6 @@
 LABEL maintainer Andrejs Cunskis <andrejs.cunskis@gmail.com>
 
+USER root
 RUN sed -i -e 's/usepw/nopw/g' /opt/bin/entry_point.sh
+
+USER seluser
